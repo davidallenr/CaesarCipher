@@ -24,8 +24,9 @@ if __name__ == "__main__":
     print("Original String: " + userinput_string)
     print("Your encrpted String: " + encrypt(userinput_string, userinput_shift))
 
+    # Change this value to affect shift
+    DEFAULT_SHIFT = 5
     print("\n\n")
     prompt_name = "Please input your full name: "
     user_name = input(prompt_name)
-    print("Caesar Shift of your name: " + encrypt(user_name, 1))
-    print("Can you figure out the shift key?")
+    print("Caesar Shift of your name: " + encrypt(user_name, DEFAULT_SHIFT))
